@@ -1,0 +1,54 @@
+GIT
+1.	How to install GitHub in the command line interface:=
+            Type a command:-  yum install git.
+ 
+==================================================================================
+2.	Before installing the GitHub, we type the command git, so the result is shown in the command line interface (the command not found)
+ 
+
+=============================================================================
+3.	Next how to make versioning a particular folder:-
+
+Step 1:- Create a folder mkdir <foldername>  (ex:- mkdir devops)
+ 
+
+Step 2:- After creating a folder, get inside the folder cd  <foldername> (ex:- cd devops)
+ 
+
+Step 3:- how to check the hidden file in the folder 
+	ls -a
+ 
+
+step 4:-
+ now we will make this folder a git repository, because if we check the git status it will give us a message that it is (not a git repository).  That’s why we converted the folder into a Git repository.
+
+How to do that:-
+
+1st enter the command git init.
+ 
+
+2nd  create a Empty file inside the devops folder touch simple.txt.
+ 
+
+3rd again check the git status.
+ 
+
+The above picture tells us that the simple.txt file is an untracked file, and provides instructions for converting it into a tracked file.
+
+
+NOTE: Before converting into a tracked condition, you need to set up your Git identity, which means it is essential for tracking who made specific changes in a Git repository.
+
+How to set up the git identity is:
+ Enter the command git config –global user.email “ your@gmail.com”
+					&
+Enter the command git config –global user.name “yourname”.
+
+ 
+
+Step 4th : Now before committing the file you need to add the file in the staging area (” staging area meaning it's now ready to be saved (committed)”)  
+
+In simpler terms to understand the git add <filename > is:
+•	Before using Git add: Git doesn’t know which changes you want to save.
+•	After using git add: Git knows you want to save the changes to that file.
+Now enter the command git add Simple.txt.
+
